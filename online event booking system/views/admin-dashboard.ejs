@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<div class="container">
+
+<div class="card">
+    <h2>Total Users</h2>
+    <p><%= users %></p>
+</div>
+
+<div class="card">
+    <h2>Total Events</h2>
+    <p><%= events %></p>
+</div>
+
+<div class="card">
+    <h2>Total Bookings</h2>
+    <p><%= bookings %></p>
+</div>
+
+</div>
+
+<h2>Admin Controls</h2>
+
+<ul>
+    <li>Manage Users</li>
+    <li>Manage Events</li>
+    <li>Monitor Bookings</li>
+    <li>Delete Suspicious Events</li>
+</ul>
+
+<a href="/logout">
+    <button>Logout</button>
+</a>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>

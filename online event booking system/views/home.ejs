@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Booking System</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<h1>Upcoming Events</h1>
+
+<div class="container">
+
+<% events.forEach(event => { %>
+
+<div class="card">
+    <h2><%= event.title %></h2>
+    <p><%= event.description %></p>
+    <p>Date: <%= event.date %></p>
+    <p>Location: <%= event.location %></p>
+    <p>Seats: <%= event.seats %></p>
+
+    <a href="/event/<%= event.id %>">View Details</a>
+</div>
+
+<% }) %>
+
+</div>
+
+</body>
+</html>
